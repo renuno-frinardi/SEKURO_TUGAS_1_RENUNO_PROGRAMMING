@@ -3,7 +3,7 @@
 <package format="3">
   <name>cpp_pubsub</name>
   <version>1.0.0</version>
-  <description>Simulasi sederhana sebuah mtoor yang dapat dikontrol dari microcontroller</description>
+  <description>Simulasi sederhana sebuah motor yang dapat dikontrol dari microcontroller</description>
   <maintainer email="renunofrinardi@gmail.com">renuno</maintainer>
   <license>Apache 2.0</license>
 
