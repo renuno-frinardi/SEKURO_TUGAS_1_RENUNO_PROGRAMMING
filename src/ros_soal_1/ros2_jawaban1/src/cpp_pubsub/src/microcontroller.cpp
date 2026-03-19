@@ -24,7 +24,7 @@ namespace cpp_pubsub {
             }
 
             std_msgs::msg::Char msg;
-            msg.data = normalizeCommand(input);
+            msg.data = input;
             publisher_->publish(msg);
             RCLCPP_INFO(this->get_logger(), "[INPUT] '%c'", msg.data);
         }
@@ -32,10 +32,6 @@ namespace cpp_pubsub {
 
     bool MicrocontrollerNode::isValidCommand(char input) const {
         return input == 'w' || input == 'a' || input == 's' || input == 'd';
-    }
-
-    char MicrocontrollerNode::normalizeCommand(char input) const {
-        return input;
     }
 } 
 

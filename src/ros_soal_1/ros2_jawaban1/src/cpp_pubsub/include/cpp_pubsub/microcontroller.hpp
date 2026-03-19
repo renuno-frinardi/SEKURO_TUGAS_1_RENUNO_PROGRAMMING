@@ -15,7 +15,6 @@ namespace cpp_pubsub {
 
         private:
             bool isValidCommand(char input) const;
-            char normalizeCommand(char input) const;
 
             rclcpp::Publisher<std_msgs::msg::Char>::SharedPtr publisher_;
     };
